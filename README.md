@@ -3,6 +3,7 @@
 #### Prerequisites:
 1. Install Python 3.10+ 
 2. Install libraries from requirements.txt
+3. Download csv data and onnx models from [drive](https://drive.google.com/drive/folders/1OxKl9TCdTaVF2rvU3VFfsSoCdZLoqg2T?usp=sharing)
 
 To start test app run: 
 > `streamlit run streamlit_app.py`
@@ -36,7 +37,7 @@ First you should upload image and than calories calculation can be done in 2 way
 
 ### Using ChatGPT
 Request to ChatGPT (gpt-4o-mini) to analyze image and get info about calories with help of [gpt4free](https://github.com/xtekky/gpt4free/tree/main?tab=readme-ov-file) library. No keys are needed
-- 
+
 ### Using CLIP and SegClip models
 First image converted into embeding space with [CLIP](https://github.com/openai/CLIP). Next it compared with predifined text embedings using Faiss. Text is some combinations of different product from food.csv. 
 For most similar food segmantation using [clipseg](https://github.com/timojl/clipseg/tree/master) to find area. 
@@ -45,4 +46,4 @@ This area multipled by calories for corresponding food and divaded by 1000. All 
 
 
 ## Demo image
-[![DEMO]]()
+[![DEMO]](https://github.com/Zhovtukhin/simple_food_calories_calculator_demo/blob/main/demo_image.png)
