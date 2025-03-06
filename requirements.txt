@@ -1,0 +1,9 @@
+streamlit==1.43.0
+g4f==0.4.8.0
+opencv-python==4.11.0.86
+faiss-cpu==1.10.0
+onnxruntime==1.20.1
+psutil==7.0.0
+numpy
+pandas
+
