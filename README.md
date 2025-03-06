@@ -40,10 +40,10 @@ Request to ChatGPT (gpt-4o-mini) to analyze image and get info about calories wi
 
 ### Using CLIP and SegClip models
 First image converted into embeding space with [CLIP](https://github.com/openai/CLIP). Next it compared with predifined text embedings using Faiss. Text is some combinations of different product from food.csv. 
-For most similar food segmantation using [clipseg](https://github.com/timojl/clipseg/tree/master) to find area. 
-This area multipled by calories for corresponding food and divaded by 1000. All model are running using onnxruntime
+For most similar food segmantation model applies using [clipseg](https://github.com/timojl/clipseg/tree/master) in order to find area of this product on image. 
+This area (pixel count) multipled by calories for corresponding food and divaded by 1000. All model are running using onnxruntime
 
 
 
 ## Demo image
-[![DEMO]](https://github.com/Zhovtukhin/simple_food_calories_calculator_demo/blob/main/demo_image.png)
+<img src="demo_image.png" alt="drawing" height="200em"/>
